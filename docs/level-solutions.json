@@ -1,0 +1,349 @@
+[
+  {
+    "id": 0,
+    "name": "First spark",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Side hustle",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 2,
+    "name": "The sandwich",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Double trouble",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bank on it",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Ignition test",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Short fuse",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Domino effect",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.9121413299670817
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Split decision",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Blast radius",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.9318669917784375
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Crossfire",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Meltdown",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Prism lesson",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Twin engines",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.9318669917784375
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Inside job",
+    "won": true,
+    "volleys": 2,
+    "par": 2,
+    "remaining": 0,
+    "angles": [
+      -2.8332386827216594,
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Fork in the road",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.714884711853525
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Prism garden",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.9121413299670817
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Light show",
+    "won": true,
+    "volleys": 2,
+    "par": 2,
+    "remaining": 0,
+    "angles": [
+      -0.9987521342655821,
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Steel city",
+    "won": true,
+    "volleys": 2,
+    "par": 2,
+    "remaining": 0,
+    "angles": [
+      -0.7423185307179585,
+      -2.793787359098948
+    ]
+  },
+  {
+    "id": 19,
+    "name": "The vault",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Alternating current",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -0.8803981633974485
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Pressure valve",
+    "won": true,
+    "volleys": 2,
+    "par": 2,
+    "remaining": 0,
+    "angles": [
+      -0.3280796326794895,
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Steel petals",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Night shift",
+    "won": true,
+    "volleys": 2,
+    "par": 2,
+    "remaining": 0,
+    "angles": [
+      -2.793787359098948,
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Hot circuit",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.8529643445330146
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Cascade",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Butterfly effect",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.4979024319286127
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Reactor heart",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Last line",
+    "won": true,
+    "volleys": 2,
+    "par": 2,
+    "remaining": 0,
+    "angles": [
+      -0.466159265358979,
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": 29,
+    "name": "The perfect storm",
+    "won": true,
+    "volleys": 1,
+    "par": 1,
+    "remaining": 0,
+    "angles": [
+      -2.951592653589793
+    ]
+  },
+  {
+    "id": "daily",
+    "name": "Daily reactor",
+    "won": true,
+    "volleys": 1,
+    "par": 3,
+    "remaining": 0,
+    "angles": [
+      -2.9121413299670817
+    ]
+  }
+]

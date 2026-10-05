@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#101e27"><meta name="description" content="Bank the perfect shot. Break the whole reactor. A satisfying ricochet puzzle game.">
+<title>Ricochet Foundry</title><link rel="icon" href="./assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+<div id="app">
+<header class="topbar"><button id="brand" class="brand" aria-label="Open level selection"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M5 27 17 7 29 27"/><circle cx="17" cy="7" r="4"/><path d="m12 27 5-8 5 8"/></svg><span>RICOCHET<b>FOUNDRY</b></span></button><div class="top-center"><span class="status-dot"></span> <span id="sector-label">SECTOR 01 / IGNITION</span></div><div class="top-actions"><button id="levels-btn" class="icon-btn" aria-label="Select level" title="Levels"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/></svg></button><button id="sound-btn" class="icon-btn" aria-label="Mute sound" title="Sound">♪</button><button id="pause-btn" class="icon-btn" aria-label="Pause game" title="Pause (P)">Ⅱ</button></div></header>
+<main>
+<aside class="brief"><div class="eyebrow">PRECISION. MEET DESTRUCTION.</div><h1>Make every<br>bounce count.</h1><p>One good angle.<br>A beautiful chain reaction.</p><div class="level-brief"><div class="eyebrow" id="level-counter">CHAMBER 01 / 30</div><h2 id="level-name">First spark</h2><p id="level-description">Clear the amber cores. Aim, then release.</p><div class="par"><span>PERFECT CLEAR</span><b id="par-label">1 VOLLEY</b></div></div><div class="legend"><div><i class="legend-core"></i><span>Core <small>Break every one</small></span></div><div><i class="legend-bomb">✦</i><span>Overload <small>Blast nearby cores</small></span></div><div><i class="legend-split">Y</i><span>Splitter <small>Multiply your volley</small></span></div></div><div class="desktop-hint"><kbd>←</kbd> <kbd>→</kbd> aim &nbsp; <kbd>Space</kbd> fire<br><span>Or aim with your mouse and release</span></div><button id="daily-btn" class="daily-button"><span>◈ &nbsp; DAILY REACTOR</span><span>↗</span></button></aside>
+<section class="play-area" aria-label="Game chamber"><div class="chamber-header"><div><span class="eyebrow" id="mobile-level">CHAMBER 01</span><b id="chamber-title">First spark</b></div><div class="counters"><div><span>CORES</span><b id="cores-count">0</b></div><div><span>VOLLEYS</span><b id="shots-count">0</b></div></div></div><div id="canvas-wrap"><canvas id="game" tabindex="0" aria-label="Aim at the cores and release to launch. Arrow keys aim, Space fires."></canvas><div id="toast" role="status" aria-live="polite"></div><div id="tutorial"><span class="gesture">↗</span><b>Drag to aim. Release to fire.</b><span>Shatter every amber core.</span><button id="skip-tutorial">Got it</button></div></div><div class="chamber-footer"><div id="volley-label"><span class="status-dot"></span> <span>12 BALLS · READY</span></div><div class="tools"><button id="undo-btn" title="Rewind the last volley (Z)" disabled>↶ <span>Rewind</span></button><button id="retry-btn" title="Restart chamber (R)">↻ <span>Restart</span></button></div></div></section>
+<aside class="right-rail"><span>EST. 2026</span><div></div><span>CONTROLLED CHAOS</span></aside>
+</main>
+<footer class="bottom-bar"><span>FLYING HIPPO <b>•</b> RICOCHET FOUNDRY</span><span id="total-stars">0 / 90 STARS</span></footer>
+</div>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div id="modal-content" class="modal-card"></div></div>
+<script type="module" src="./src/main.js"></script>
+</body></html>
