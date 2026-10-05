@@ -20,6 +20,7 @@ jobs:
       - run: npm run build
       - run: npm run test:browser
       - run: npm run media
+      - run: sudo apt-get install -y ffmpeg
       - run: node scripts/record.mjs
       - uses: actions/upload-artifact@v4
         if: always()

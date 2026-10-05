@@ -8,6 +8,8 @@ A complete, lightweight HTML5 arcade puzzler made for a CrazyGames Basic Launch 
 
 ## Play locally
 
+**Quickest:** download `submission/play-ricochet-foundry.html` and double-click it. This self-contained review build does not need a server.
+
 Install Node.js 20 or newer, open a terminal in this folder, then run:
 
 ```sh
