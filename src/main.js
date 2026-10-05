@@ -6,6 +6,7 @@ import {Sound} from './audio.js';
 const $=id=>document.getElementById(id),canvas=$('game'),modal=$('modal'),card=$('modal-content');
 const portal=new Portal(),sound=new Sound(),renderer=new Renderer(canvas);
 await portal.init();let progress=portal.load();sound.enabled=progress.sound;renderer.motion=progress.motion&&!matchMedia('(prefers-reduced-motion: reduce)').matches;
+let booted=false;
 let level,state,angle=-Math.PI/2,history=null,paused=false,hidden=document.hidden,dragging=false,activePointer=null,keys=new Set(),accumulator=0,lastTime=0,resultDelay=0,resultShown=false,toastTimer=0,previousFocus=null;
 const totalStars=()=>progress.stars.reduce((a,b)=>a+b,0);
 const unlocked=()=>Math.min(29,progress.stars.findIndex(s=>s===0)<0?29:progress.stars.findIndex(s=>s===0));
@@ -26,7 +27,7 @@ function loadLevel(which){
  $('sector-label').textContent=`SECTOR 0${level.sector+1} / ${SECTORS[level.sector].name}`;
  $('par-label').textContent=`${level.par} ${level.par===1?'VOLLEY':'VOLLEYS'}`;
  $('tutorial').classList.toggle('hidden',progress.tutorial||level.id!==0);
- closeModal(false);if(lastTime>0)portal.start();hud();
+ closeModal(false);if(booted)portal.start();hud();
  if(level.id!==0)toast(level.tip);
 }
 function openModal(html){previousFocus=document.activeElement;paused=true;keys.clear();dragging=false;activePointer=null;portal.stop();sound.silence(true);card.innerHTML=html;modal.classList.remove('hidden');requestAnimationFrame(()=>card.querySelector('button')?.focus());}
@@ -88,7 +89,7 @@ function frame(now){const dt=Math.min(.05,(now-(lastTime||now))/1000);lastTime=n
  }
  requestAnimationFrame(frame);
 }
-updateSound();loadLevel(unlocked());portal.ready();portal.start();requestAnimationFrame(frame);
+updateSound();loadLevel(unlocked());portal.ready();booted=true;portal.start();requestAnimationFrame(frame);
 // QA harness exists only on localhost; never exposed on the portal or preview hosts.
 if(['localhost','127.0.0.1'].includes(location.hostname)&&new URLSearchParams(location.search).has('qa')){
  window.__qa={get state(){return state;},get level(){return level;},get progress(){return progress;},get angle(){return angle;},get portal(){return portal;},load:i=>loadLevel(i==='daily'?dailyLevel():i),shoot:a=>{angle=a;fire();},point:(x,y)=>renderer.screenPoint(x,y),advance:(seconds)=>{for(let i=0;i<seconds/STEP;i++)step(state,STEP);},showLevels,showPause,rewind,renderer};

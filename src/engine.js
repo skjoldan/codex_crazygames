@@ -33,7 +33,7 @@ export function moveBall(s,ball,dt,preview=false){
  if(ball.y<TOP+RADIUS){ball.y=TOP+RADIUS;ball.vy=Math.abs(ball.vy);bounce=true;}
  for(const b of s.blocks){
   if(!b.alive||(b.id===ball.last&&ball.cool>0))continue;
-  // Swept-size substeps limit movement to < radius; expanded AABB for stable arcade rebounds.
+  // Small fixed steps keep travel well below tile thickness; expanded AABB arcade rebounds.
   if(ball.x>b.x-RADIUS&&ball.x<b.x+b.w+RADIUS&&ball.y>b.y-RADIUS&&ball.y<b.y+b.h+RADIUS){
    if(py>=b.y+b.h+RADIUS-.01){ball.y=b.y+b.h+RADIUS;ball.vy=Math.abs(ball.vy);}
    else if(py<=b.y-RADIUS+.01){ball.y=b.y-RADIUS;ball.vy=-Math.abs(ball.vy);}
